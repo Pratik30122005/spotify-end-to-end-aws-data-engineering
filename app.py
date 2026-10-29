@@ -42,6 +42,7 @@ if DATA_FILE.exists():
         st.divider()
         st.subheader("📊 Key Metrics")
         m1, m2, m3 = st.columns(3)
+        total_sales = df_clean["total_amount"].sum()
         m1.metric("Total Records", len(df_clean))
-        m2.metric("Total Sales Amount", f"₹{df_clean[\"total_amount\"].sum():,}")
+        m2.metric("Total Sales Amount", f"₹{total_sales:,.2f}")
         m3.metric("Unique Cities", df_clean["city"].nunique())
