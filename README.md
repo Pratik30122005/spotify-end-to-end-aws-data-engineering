@@ -1,34 +1,39 @@
-# AWS Sales Data Engineering Pipeline
+# 🎵 Spotify End-to-End AWS Data Engineering Pipeline
 
-## Project Overview
-An automated sales data pipeline built using Python and AWS services.
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://spotify-end-to-end-aws-data-engineering.streamlit.app/)
 
-## Technologies Used
-- Python
-- Pandas
-- Amazon S3
-- AWS Lambda
-- Amazon Athena
-- SQL
-- Git and GitHub
+An automated, serverless streaming music analytics data engineering pipeline built on AWS and Python.
 
-## Pipeline Workflow
-1. Upload raw sales CSV files to Amazon S3.
-2. S3 triggers AWS Lambda when a CSV is uploaded to raw/.
-3. Lambda calculates total_amount and saves the processed CSV to processed/.
-4. Athena queries the processed sales data.
-5. SQL analyzes sales by city, product, and date.
+## 🌟 Architecture Overview
+1. **Raw Ingestion (Amazon S3)**: Raw track streaming event logs (`data/spotify_tracks.csv`) ingested from the Spotify Web API.
+2. **Serverless ETL (AWS Lambda & Pandas)**: Automated event trigger executes deduplication, feature extraction (duration in minutes, acoustic scores), and royalty calculations ($0.0035 / stream).
+3. **Data Lake Storage (Amazon S3)**: Processed, analytics-ready datasets stored in the S3 processed bucket.
+4. **Interactive Analytics (Amazon Athena & Streamlit UI)**: Real-time SQL querying and streaming analytics dashboard.
 
-## Key Features
-- Automated CSV processing
-- Raw and processed data storage
-- Event-driven serverless processing
-- SQL-based sales analysis
+## 📊 Dataset Schema
+- `track_id`: Unique track identifier
+- `track_name`: Track title
+- `artist_name`: Performing artist
+- `album`: Album name
+- `genre`: Music genre (Pop, R&B, Hip-Hop, etc.)
+- `streams`: Total global streams
+- `duration_ms`: Duration in milliseconds
+- `danceability`: Audio metric (0.0 to 1.0)
+- `energy`: Acoustic intensity (0.0 to 1.0)
+- `release_date`: Official release date
 
-## Project Structure
-- scripts/transform.py
-- .gitignore
-- README.md
+## 🚀 Running Locally
+```bash
+# Clone the repository
+git clone https://github.com/Pratik30122005/spotify-end-to-end-aws-data-engineering.git
+cd spotify-end-to-end-aws-data-engineering
 
-## Note
-This is a learning project using sample sales data.
+# Install dependencies
+pip install -r requirements.txt
+
+# Run ETL script
+python scripts/transform.py
+
+# Launch Spotify Analytics Dashboard
+streamlit run app.py
+```

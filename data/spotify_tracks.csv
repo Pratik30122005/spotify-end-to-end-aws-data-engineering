@@ -1,0 +1,14 @@
+track_id,track_name,artist_name,album,genre,streams,duration_ms,danceability,energy,release_date
+track_001,Blinding Lights,The Weeknd,After Hours,Pop,3800000000,200040,0.51,0.73,2020-03-20
+track_002,Shape of You,Ed Sheeran,Divide,Pop,3500000000,233712,0.82,0.65,2017-01-06
+track_003,Someone You Loved,Lewis Capaldi,Divinely Uninspired,Pop,3100000000,182160,0.50,0.41,2019-05-17
+track_004,Starboy,The Weeknd,Starboy,R&B,2900000000,230453,0.68,0.59,2016-11-25
+track_005,As It Was,Harry Styles,Harry's House,Indie Pop,2800000000,167303,0.52,0.73,2022-04-01
+track_006,Stay,The Kid LAROI,F*ck Love 3,Hip-Hop,2700000000,141806,0.59,0.76,2021-07-09
+track_007,Sunflower,Post Malone,Spider-Man Soundtrack,Hip-Hop,2600000000,158040,0.76,0.48,2018-10-18
+track_008,Levitating,Dua Lipa,Future Nostalgia,Dance-Pop,2400000000,203064,0.70,0.82,2020-03-27
+track_009,Believer,Imagine Dragons,Evolve,Rock,2500000000,204347,0.77,0.78,2017-02-01
+track_010,Heat Waves,Glass Animals,Dreamland,Alternative,2600000000,238805,0.76,0.52,2020-06-29
+track_002,Shape of You,Ed Sheeran,Divide,Pop,3500000000,233712,0.82,0.65,2017-01-06
+track_011,Cruel Summer,Taylor Swift,Lover,Pop,2100000000,178426,0.55,0.70,2019-08-23
+track_012,Bad Guy,Billie Eilish,When We All Fall Asleep,Electropop,2300000000,194087,0.70,0.43,2019-03-29
