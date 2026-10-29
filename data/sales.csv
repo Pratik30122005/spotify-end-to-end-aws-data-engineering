@@ -1,0 +1,9 @@
+order_id,product,city,quantity,price,order_date
+1001,Laptop,mumbai,1,55000,2025-01-10
+1002,Mouse,pune,2,800,2025-01-11
+1003,Keyboard,delhi,1,2500,2025-01-12
+1004,Monitor,mumbai,2,12000,2025-01-13
+1005,Headphones,bangalore,3,1500,2025-01-14
+1002,Mouse,pune,2,800,2025-01-11
+1006,Tablet,hyderabad,1,22000,2025-01-15
+1007,USB Cable,chennai,5,300,2025-01-16
